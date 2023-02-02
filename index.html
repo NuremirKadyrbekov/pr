@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        #block1
+        {
+            background-color: yellow;
+            height: 200px;
+        }
+       #block2
+       {
+       background-color: red;
+        margin: 5px;
+        height: 100px;
+       }
+       #block3
+       {
+        background-color: blue;
+        margin: 5px;
+       }
+    </style>
+</head>
+<body>
+    <!-- <div id="block1">
+        block1
+        <div id="block2">
+            block2
+            <div id="block3">
+                block3
+            </div>
+        </div>
+    </div> -->
+    <!-- <h1></h1>
+  <button>0</button> -->
+  <h1>Вы находитесь на сайте уже;</h1>
+
+  <h1 id="a">0</h1>
+
+  <!-- <button onclick="Oncount()">COUNT</button> -->
+
+  <!-- <h1>За это время ваш доход мог составлять ;</h1>
+
+  <h1 id="b">0</h1> -->
+    <script>
+
+
+let a =  document.getElementById('a')
+
+let click = 0 ;
+
+const Oncount = () =>
+{
+    click++
+    a.innerHTML = click
+}
+
+setInterval(() => {
+    Oncount()
+}, 1000);
+// let b =  document.getElementById('b')
+
+// let doxod = 0 ;
+
+// const Oncountt = () =>
+// {
+//     doxod++
+//     b.innerHTML = doxod
+// }
+
+// setInterval(() => {
+//     Oncountt()
+// }, 400);
+    //    block1.addEventListener('click',(event)=>{
+    //     console.log(event.target.id)
+    //    })
+    //    block2.addEventListener('click',(event)=>{
+    //     console.log()
+    //    })
+    //    block3.addEventListener('click',(event)=>{
+    //     console.log()
+    //    })
+
+    // block3.addEventListener('click',(event)=>{
+    //     console.log(event.currentTarget.parentNode.parentNode)
+    // })
+//     for (let btn of document.querySelectorAll("button")) {
+//   let clicks = 0
+  
+//   btn.addEventListener('click', e => {
+//     btn.textContent = ++clicks
+//   })
+// }
+    </script>
+</body>
+</html>
